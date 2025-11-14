@@ -15,7 +15,20 @@ class MainApp extends StatelessWidget {
          child: Column(
          children: [
           Text('Hello world'),
-          Text('bonjour tous le monde')
+          Text('bonjour tous le monde'),
+          Container(
+            margin: EdgeInsets.all(20),
+            padding: EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              color: Colors.blueAccent,
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: Text(
+              'boite stylisee avec contenaire',
+              style: TextStyle(color:Colors.white, fontSize: 18),
+
+            ),
+          )
          ], 
          ),
         ),
